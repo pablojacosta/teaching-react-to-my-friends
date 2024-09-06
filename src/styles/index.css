@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+}
+
+html,
+body {
+  background-color: #e1e1e1;
+  overscroll-behavior: none;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.simpleComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid green;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(95, 160, 96);
+
+  button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.simpleCounter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid blue;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: cadetblue;
+
+  button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.counterWithProps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid orange;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(170, 128, 15);
+
+  button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.grid {
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid violet;
+  border-radius: 0.5rem;
+  background-color: rgb(193, 117, 132);
+}
+
+.grid div {
+  background-color: darkorchid;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.toDos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 0.5rem;
+
+    p {
+      display: flex;
+      align-items: center;
+      width: 4.4375rem;
+      height: 1.3125rem;
+    }
+  }
+}
